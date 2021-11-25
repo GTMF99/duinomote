@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/editor_root_view"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.duinomote.app.ControlEditorActivity">
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<com.google.android.material.appbar.MaterialToolbar
+			android:id="@+id/controleditor_topappbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="@color/colorSurface"
+			app:navigationIcon="@drawable/ic_back_24dp"
+			app:menu="@menu/controleditor_topappbar" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/keypad_edit"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+	</FrameLayout>
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/create_control"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:layout_marginBottom="16dp"
+		app:backgroundTint="@color/colorPrimary"
+		style="@style/Widget.MaterialComponents.FloatingActionButton"
+		android:src="@drawable/ic_add_24dp"
+		android:layout_gravity="end|bottom" /> 
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

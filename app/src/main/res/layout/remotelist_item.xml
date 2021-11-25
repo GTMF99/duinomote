@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp">
+    <RelativeLayout
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+    	<ImageView
+    		android:id="@+id/remotelist_item_image"
+    		android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_tv_48dp"/>
+    	<com.google.android.material.textview.MaterialTextView
+    		android:id="@+id/remotelist_item_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toEndOf="@+id/remotelist_item_image" />
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

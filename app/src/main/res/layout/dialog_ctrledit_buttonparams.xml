@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <com.google.android.material.textfield.TextInputLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="IR Signal"
+	        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+	        <com.google.android.material.textfield.TextInputEditText
+	            android:id="@+id/dialog_ctrledit_signal"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+                android:enabled="true" />
+	    </com.google.android.material.textfield.TextInputLayout>
+	    <com.google.android.material.button.MaterialButton
+	   		android:id="@+id/capture_button"
+	   		android:paddingLeft="8dp"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+		    android:text="Capture"
+		    android:textAllCaps="true"/>
+	</RelativeLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Shape">
+
+        <AutoCompleteTextView
+            android:id="@+id/dialog_ctrledit_shape"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Icon">
+
+        <AutoCompleteTextView
+            android:id="@+id/dialog_ctrledit_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Color">
+
+        <AutoCompleteTextView
+            android:id="@+id/dialog_ctrledit_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

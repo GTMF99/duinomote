@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Duinomote</string>
+    <string name="main_topappbar_title">DuinoMote</string>
+    <string name="content_description_main_search">Search for remotes</string>
+    <string name="main_search">Search</string>
+    <string name="main_create_button">Create</string>
+    <string name="controleditor_save">Save</string>
+    <string name="content_description_controleditor_save">Save remote layout</string>
+    <string name="control_edit">Edit</string>
+    <string name="content_description_control_edit">Edit remote layout</string>
+    <string-array name="categories">
+    	<item>TV</item>
+    	<item>AC</item>
+    	<item>A/V Receiver</item>
+    	<item>DVD Player</item>
+    	<item>Projector</item>
+    	<item>Set-top Box</item>
+    </string-array>
+    <string-array name="colors">
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Orange</item>
+        <item>Purple</item>
+    </string-array>
+    <string-array name="shapes">
+        <item>Circle</item>
+        <item>Square</item>
+        <item>Triangle</item>
+    </string-array>
+    <string-array name="icons">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>
